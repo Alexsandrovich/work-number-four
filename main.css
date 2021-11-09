@@ -9,6 +9,11 @@
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .wrapper {
     display: flex;
 }
@@ -22,9 +27,8 @@
     height: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+.nav-list {
+    overflow: auto;
 }
 
 .header-title {
@@ -91,4 +95,40 @@ a {
 
 .list-inner {
     margin-left: 40px;
+}
+
+.text-link {
+    text-decoration: underline;
+    color: #4645EF;
+}
+
+@media (max-width: 815px) {
+    .wrapper {
+        display: block;
+    }
+    .nav-bar {
+        display: block;
+        border-right: none;
+        position: static;
+    }
+    .header-title {
+        padding: 20px 0;
+        font-size: 29px;
+        text-align: center;
+        font-weight: 400;
+        color: #000;
+    }
+    .nav-list {
+        overflow: auto;
+        border: 2px solid;
+        height: 233px;
+    }
+    .nav-list li:first-child {
+        border-top: none;
+    }
+    .main-doc {
+        background-color: #fff;
+        margin: 0;
+        padding: 30px 25px;
+    }
 }
